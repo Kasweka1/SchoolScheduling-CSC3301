@@ -137,83 +137,72 @@
         <div class="container-fluid page-body-wrapper">
             <!-- partial:partials/_sidebar.html -->
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="mdi mdi-home menu-icon"></i>
-                            <span class="menu-title">Admin Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
-                            aria-controls="ui-basic">
-                            <i class="mdi mdi-account-group menu-icon"></i>
-                            <span class="menu-title">Student</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="ui-basic">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="view_students.html">View Students</a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Add
-                                        Student</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
-                            aria-controls="form-elements">
-                            <i class="mdi mdi-account-tie menu-icon"></i>
-                            <span class="menu-title">Staff</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="form-elements">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">View
-                                        Staff Members</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Add
-                                        Members</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false"
-                            aria-controls="charts">
-                            <i class="mdi mdi-school menu-icon"></i>
-                            <span class="menu-title">Program</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="charts">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">View
-                                        Programs</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Add
-                                        Programs</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#courses" aria-expanded="false"
-                            aria-controls="charts">
-                            <i class="mdi mdi-book-education menu-icon"></i>
-                            <span class="menu-title">Course</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="courses">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">View
-                                        Courses</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Add
-                                        Course</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                </ul>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="mdi mdi-home menu-icon"></i>
+                    <span class="menu-title">Admin Dashboard</span>
+                  </a>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                    <i class="mdi mdi-account-group menu-icon"></i>
+                    <span class="menu-title">Student</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="ui-basic">
+                    <ul class="nav flex-column sub-menu">          
+                      <li class="nav-item"> <a class="nav-link" href="view_students.html">View Students</a></li>
+                      <li class="nav-item"> <a class="nav-link" href="add_student.html">Add Student</a></li>         
+                    </ul>
+                  </div>
+                </li>   
+                 
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
+                    aria-controls="form-elements">
+                    <i class="mdi mdi-account-tie menu-icon"></i>
+                    <span class="menu-title">Staff</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="form-elements">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item"><a class="nav-link" href="view_staff.html">View Staff Members</a></li>          
+                      <li class="nav-item"><a class="nav-link" href="add_staff.html">Add Members</a></li>          
+                    </ul>
+                  </div>
+                </li> 
+                
+                
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                    <i class="mdi mdi-school menu-icon"></i>
+                    <span class="menu-title">Program</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="charts">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item"> <a class="nav-link" href="view_program.html">View Programs</a></li>
+                      <li class="nav-item"> <a class="nav-link" href="add_progam.html">Add Programs</a></li>
+                    </ul>
+                  </div>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="collapse" href="#courses" aria-expanded="false" aria-controls="charts">
+                    <i class="mdi mdi-book-education menu-icon"></i>
+                    <span class="menu-title">Course</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="courses">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item"> <a class="nav-link" href="view_course.html">View Courses</a></li>
+                      <li class="nav-item"> <a class="nav-link" href="add_course.html">Add Course</a></li>
+                    </ul>
+                  </div>
+                </li>
+                
+              </ul>
             </nav>
             <!-- partial -->
             <div class="main-panel">
@@ -310,51 +299,19 @@
                               <div class="row">
                                 <div class="col-md-6">
                                   <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Program</label>
+                                    <label class="col-sm-3 col-form-label">Staff Type</label>
                                     <div class="col-sm-9">
                                       <select class="form-select">
-                                        <option>Computer Science</option>
-                                        <option>Engineering</option>
-                                        <option>Ecoonomics</option>
-                               
+                                        <option>HOD</option>
+                                        <option>Lecturer</option>
+                                  
                                       </select>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Sponsor Type</label>
-                                    <div class="col-sm-4">
-                                      <div class="form-check">
-                                        <label class="form-check-label">
-                                          <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
-                                         Self sponsored
-                                        </label>
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-5">
-                                      <div class="form-check">
-                                        <label class="form-check-label">
-                                          <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
-                                          GRZ
-                                        </label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                          
                               </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Enrollment Year</label>
-                                    <div class="col-sm-9">
-                                      <input type="date" class="form-control" />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  </div>
-                              </div>
+                              
                               
                             <button type="button" class="btn btn-primary">Submit</button>
                             </form>
