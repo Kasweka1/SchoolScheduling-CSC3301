@@ -50,15 +50,14 @@ class CourseTime {
 }
 
 class Course {
-    constructor(courseID, courseName, durations) {
+    constructor(courseID, courseName) {
         this.courseID = courseID;
         this.courseName = courseName;
-        this.durations = durations;
     }
 
     courseID;
     courseName;
-    durations;
+    courseTimes = [];
 
     init() {
         document.getElementById(this.courseID).addEventListener('click', () => {
@@ -68,13 +67,20 @@ class Course {
         });
     }
 
-    setDuration(duration) {
-        this.durations.push(duration);
+    setCourseTime(courseTime) {
+        // add courseTime to courseTimes array
+        if (courseTime.occupied) { 
+            console.error("Course time already taken")
+            return 
+        }
+        this.courseTimes.push(courseTime)
+        courseTime.occupied = true
     }
 
-    unsetDuration(duration) {
-        // recreate durations array after filtering out duration:
-        this.durations = this.durations.filter(item => item !== duration);
+    unsetCourseTime(courseTime) {
+        // recreate courseTimes array after filtering out courseTime:
+        this.courseTimes = this.courseTimes.filter(item => item !== courseTime);
+        courseTime.occupied = false
     }
 }
 
@@ -98,7 +104,21 @@ function createCourseTime(duration, day) {
 }
 
 // Schedule durations from 07:00 to 12:50 and from 14:00 to 17:50
-createDurations(7, 6);
-createDurations(14, 4);
+createDurations(7, 6)
+createDurations(14, 4)
 
-console.log(durations);
+console.log(durations)
+
+createCourseTime(durations[0], Days.Mon)
+createCourseTime(durations[1], Days.Mon)
+createCourseTime(durations[2], Days.Mon)
+createCourseTime(durations[3], Days.Mon)
+createCourseTime(durations[4], Days.Mon)
+createCourseTime(durations[5], Days.Mon)
+
+
+let csc3600 = new Course("csc3600", "Software Engineering")
+let csc3301 = new Course("csc3301", "Programming languages")
+
+csc3600.setCourseTime(courseTimes[0])
+csc3301.setCourseTime(courseTimes[0])
